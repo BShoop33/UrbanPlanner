@@ -8,6 +8,16 @@ namespace Planner
         private  DateTime _dateConstructed;
         private string _address;
         private string _owner;
+
+        public int Stories {get; set;}
+        public double Width {get; set;}
+        public double Depth {get; set;}
+        public string Volume {
+            get 
+            {
+                return $"{Width * Depth * (3 * Stories)}";
+            }
+        }
         
         static void Main(string[] args)
         {
