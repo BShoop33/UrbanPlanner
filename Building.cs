@@ -18,7 +18,11 @@ namespace Planner
                 return $"{Width * Depth * (3 * Stories)}";
             }
         }
-        
+
+        public Building(string address){
+            _address = address;
+        }
+
         static void Main(string[] args)
         {
 
